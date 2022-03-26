@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+    <title>Pokedex</title>
+  </head>
+
+  <body>
+    <h1 class="pokefont">Pokedex</h1>
+    <div class="patern-container">
+      <div id="main-container">
+        <div id="circle-container">
+          <div id="circulo1"></div>
+          <div class="circulo2"></div>
+          <div id="circulo3"></div>
+          <div id="circulo4"></div>
+        </div>
+        <div id="line-top">
+          <hr id="1" />
+          <hr id="diagonal" />
+          <hr id="lineTop" />
+        </div>
+
+        <div id="screen-container">
+          <div id="circles-screen-top">
+            <div class="circle-top"></div>
+            <div class="circle-top"></div>
+          </div>
+          <div id="pantalla">
+            <h3 id="nombre"></h3>
+            <img id="pokeImg" src="" alt="" />
+          </div>
+
+          <div>
+            <div id="bottom-elements">
+              <div class="circulo2"></div>
+              <div class="lines">
+                <hr class="line" />
+                <hr class="line" />
+                <hr class="line" />
+                <hr class="line" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="circles-bottom">
+          <div id="circle-botton1">
+            <button id="btn-search" onclick="fetchPokemon()">Buscar</button>
+          </div>
+          <div id="circle-botton2"></div>
+          <div id="circle-botton3"></div>
+        </div>
+        <div id="screen-bottom">
+          <input
+            type="text"
+            id="pokeName"
+            placeholder="Nombre Pokemon ó numero"
+          />
+        </div>
+      </div>
+      <div id="container-right">
+        <div class="screen-right">
+          <div id="type">
+            <div id="stats">
+              <table class="Stats-table">
+                <tr>
+                  <th>Type</th>
+                  <th id="1">Hp</th>
+                  <th id="2">Attack</th>
+                  <th id="3">Defence</th>
+                </tr>
+                <tr>
+                  <td id="tipoPokemon"></td>
+                  <td id="hp"></td>
+                  <td id="attack"></td>
+                  <td id="Defence"></td>
+                </tr>
+                <tr>
+                  <th id="4">Special-attack</th>
+                  <th id="5">Special-deffence</th>
+                  <th id="6">Speed</th>
+                </tr>
+                <tr>
+                  <td id="specialAttack"></td>
+                  <td id="specialDeffence"></td>
+                  <td id="Speed"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-contaner-section">
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+          <div class="btn-container"></div>
+        </div>
+
+        <div class="btn-right">
+          <div id="crls-right">
+            <div id="btn-right1"></div>
+            <div id="btn-right2"></div>
+          </div>
+
+          <div id="btn-right3"></div>
+          <div id="btn-right4"></div>
+        </div>
+
+        <div class="botones-flechas">
+          <div id="btn-flecha">
+            <div id="flecha1"></div>
+            <div id="flecha2"></div>
+          </div>
+          <div id="flecha3"></div>
+        </div>
+
+        <div class="screen-btn">
+          <div class="btn-screens"></div>
+          <div class="btn-screens"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <script src="./assets/js/consumeapi.js"></script>
+    </footer>
+  </body>
+</html>
